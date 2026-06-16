@@ -1,4 +1,5 @@
 # Print variable is even or odd
+
 import java.util.*;
 class Main {
     public static void main(String[] args) {
@@ -13,7 +14,9 @@ class Main {
     }
 }
 
-# Convertion of numeric value  into binary format
+# Convertion of numeric value  into binary format:
+
+
 import java.lang.*;
 class DAY1{
     public static void main (String [] args){
@@ -26,5 +29,79 @@ class DAY1{
             n=n/2;
         }
         System.out.println(Binary);
+    }
+}
+
+
+#Perfect Number
+
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int a=sc.nextInt();
+       int num=0;
+       for(int i=1;i<a;i++){
+        if(a%i ==0){
+            num+=i;
+        }
+       }
+       System.out.println(num == a);
+    }
+}
+
+#Reverse  of a Number
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int num = sc.nextInt();
+        int reverse = 0;
+
+        while (num != 0) {
+            int digit = num % 10;
+            reverse = reverse * 10 + digit;
+            num = num / 10;
+        }
+
+        System.out.println(reverse);
+    }
+}
+
+
+#Sum of Digits:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int num = sc.nextInt();
+        int sum = 0;
+
+        while (num != 0) {
+            int digit = num % 10;
+            sum += digit;
+            num = num / 10;
+        }
+
+        System.out.println(sum);
+    }
+}
+
+#Swaping of a  Number:
+
+
+public class day2{
+    public static void main(String[] args){
+        int a=10;
+        int b=20;
+        b=b-a;
+        a=b+a;
+        System.out.println("After Swaping: a="+a+"\nb="+b);
+
     }
 }
